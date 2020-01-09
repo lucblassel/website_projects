@@ -1,8 +1,10 @@
 import numpy as np
+import seaborn as sns
 import matplotlib.pyplot as plt
 from sklearn.datasets import load_boston
 from sklearn.linear_model import LinearRegression
 
+sns.set_context('poster')
 
 def split_dataset(X, y, train_frac=0.8):
     index = np.random.choice(len(y), int(len(y) * train_frac))
@@ -26,9 +28,9 @@ def compute_gradient(theta, X, y, lambda_):
     return (X.T @ (X @ theta - y)) / len(y) + l2
 
 
-def gradient_descent(X, y, theta, alpha, iters, lambda_=0):
+def gradient_descent(X, y, theta, alpha, max_iters, lambda_=0):
     history = []
-    for _ in range(iters):
+    for _ in range(max_iters):
         theta = theta - alpha * compute_gradient(theta, X, y, lambda_)
         history.append(compute_cost(theta, X, y, lambda_))
     return theta, history
@@ -73,8 +75,8 @@ if __name__ == "__main__":
         plt.plot(history, label=alpha)
     plt.title('Learning curve depending on learning rate alpha')
     plt.xlabel('nb. of iterations')
-    plt.ylabel('cost')
-    plt.legend()
+    plt.ylabel('cost C')
+    plt.legend(loc='upper right', title='alpha:')
     plt.show()
 
     print("Fitting regression")
