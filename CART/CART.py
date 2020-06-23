@@ -273,4 +273,3 @@ if __name__ == "__main__":
     tree_iris = Node(iris_df, 'species', max_depth=4)
     tree_iris.split()
     tree_iris.display()
-
