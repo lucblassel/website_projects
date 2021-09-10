@@ -2,7 +2,7 @@ import numpy as np
 import seaborn as sns
 import matplotlib.pyplot as plt
 from sklearn.datasets import load_boston
-from sklearn.linear_model import LinearRegression
+from sklearn.linear_model import LinearRegression, Ridge
 
 sns.set_context("poster")
 
@@ -104,10 +104,32 @@ def main():
     reg.fit(X_train_norm[:, 1:], y_train)
     preds_sklearn = reg.predict(X_test_norm[:, 1:])
 
+    print("theta: ", theta_learned)
     print(f"Our model RMSE on test set: {RMSE(y_test, y_pred)}")
     print(f"Scikit-model RMSE on test set: {RMSE(y_test, preds_sklearn)}")
 
     regression_plot(y_test, y_pred)
+
+    # With regularization
+
+    theta_init_reg = np.zeros((len(X_train_norm[0]),))
+    theta_learned_reg, _ = gradient_descent(
+        X_train_norm, y_train, theta_init_reg, 0.1, 1000, 1.0
+    )
+    y_pred_reg = predict(X_test_norm, theta_learned_reg)
+
+    ridge = Ridge(alpha=1)
+    ridge.fit(X_train_norm[:, 1:], y_train)
+    preds_ridge = ridge.predict(X_test_norm[:, 1:])
+
+    print("regularized theta: ", theta_learned_reg)
+    print(f"Our regularized model RMSE on test set: {RMSE(y_test, y_pred_reg)}")
+    print(f"Scikit-model ridge RMSE on test set: {RMSE(y_test, preds_ridge)}")
+
+    regression_plot(y_test, y_pred_reg)
+
+def evaluateRegularization():
+    pass
 
 
 if __name__ == "__main__":

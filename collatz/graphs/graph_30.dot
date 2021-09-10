@@ -1,0 +1,291 @@
+
+digraph G {
+rankdir = RL;
+     subgraph {
+     node [colorscheme=spectral10]
+
+	1 [shape=circle; style=filled; fillcolor=2];
+	2 [shape=circle; style=filled; fillcolor=3];
+	3 [shape=circle; style=filled; fillcolor=9];
+	4 [shape=circle; style=filled; fillcolor=4];
+	5 [shape=circle; style=filled; fillcolor=7];
+	6 [shape=circle; style=filled; fillcolor=10];
+	7 [shape=circle; style=filled; fillcolor=8];
+	8 [shape=circle; style=filled; fillcolor=5];
+	9 [shape=circle; style=filled; fillcolor=1];
+	10 [shape=circle; style=filled; fillcolor=8];
+	11 [shape=circle; style=filled; fillcolor=6];
+	12 [shape=circle; style=filled; fillcolor=1];
+	13 [shape=circle; style=filled; fillcolor=1];
+	14 [shape=circle; style=filled; fillcolor=9];
+	15 [shape=circle; style=filled; fillcolor=9];
+	16 [shape=circle; style=filled; fillcolor=6];
+	17 [shape=circle; style=filled; fillcolor=4];
+	18 [shape=circle; style=filled; fillcolor=2];
+	19 [shape=circle; style=filled; fillcolor=2];
+	20 [shape=circle; style=filled; fillcolor=9];
+	21 [shape=circle; style=filled; fillcolor=9];
+	22 [shape=circle; style=filled; fillcolor=7];
+	23 [shape=circle; style=filled; fillcolor=7];
+	24 [shape=circle; style=filled; fillcolor=2];
+	25 [shape=circle; style=filled; fillcolor=5];
+	26 [shape=circle; style=filled; fillcolor=2];
+	27 [shape=circle; style=filled; fillcolor=3];
+	28 [shape=circle; style=filled; fillcolor=10];
+	29 [shape=circle; style=filled; fillcolor=10];
+	30 [shape=circle; style=filled; fillcolor=10];
+
+	350->175
+	700->350
+	80->40
+	76->38
+	2734->1367
+	1132->566
+	1780->890
+	242->121
+	184->92
+	12->6
+	62->31
+	18->9
+	445->1336
+	2158->1079
+	1186->593
+	70->35
+	1300->650
+	850->425
+	7->22
+	103->310
+	46->23
+	263->790
+	479->1438
+	64->32
+	1822->911
+	1336->668
+	526->263
+	17->52
+	41->124
+	233->700
+	425->1276
+	92->46
+	4616->2308
+	182->91
+	2->1
+	466->233
+	650->325
+	124->62
+	107->322
+	35->106
+	27->82
+	283->850
+	322->161
+	137->412
+	1619->4858
+	433->1300
+	488->244
+	32->16
+	29->88
+	274->137
+	2429->7288
+	15->46
+	911->2734
+	206->103
+	25->76
+	40->20
+	161->484
+	20->10
+	121->364
+	377->1132
+	1367->4102
+	1154->577
+	82->41
+	790->395
+	2308->1154
+	26->13
+	167->502
+	866->433
+	30->15
+	24->12
+	47->142
+	175->526
+	38->19
+	21->64
+	638->319
+	412->206
+	244->122
+	1438->719
+	754->377
+	502->251
+	3->10
+	11->34
+	19->58
+	91->274
+	395->1186
+	890->445
+	2051->6154
+	13->40
+	61->184
+	719->2158
+	566->283
+	484->242
+	106->53
+	22->11
+	4->2
+	319->958
+	10->5
+	6154->3077
+	1276->638
+	5->16
+	3077->9232
+	4858->2429
+	16->8
+	14->7
+	9232->4616
+	593->1780
+	160->80
+	44->22
+	34->17
+	8->4
+	94->47
+	334->167
+	668->334
+	88->44
+	364->182
+	155->466
+	251->754
+	142->71
+	122->61
+	9->28
+	6->3
+	4102->2051
+	1732->866
+	1079->3238
+	3238->1619
+	52->26
+	3644->1822
+	53->160
+	7288->3644
+	310->155
+	58->29
+	976->488
+	577->1732
+	28->14
+	31->94
+	71->214
+	325->976
+	958->479
+	214->107
+	23->70
+
+	{rank = same; 2;}
+	{rank = same; 3; 20; 21;}
+	{rank = same; 64; 10;}
+	{rank = same; 32; 5;}
+	{rank = same; 16;}
+	{rank = same; 8;}
+	{rank = same; 4;}
+	{rank = same; 40; 6;}
+	{rank = same; 44; 46; 7;}
+	{rank = same; 22; 23;}
+	{rank = same; 11; 70;}
+	{rank = same; 34; 35;}
+	{rank = same; 17; 106;}
+	{rank = same; 52; 53;}
+	{rank = same; 160; 24; 26;}
+	{rank = same; 80; 12; 13;}
+	{rank = same; 9; 58; 61;}
+	{rank = same; 184; 28; 29; 30;}
+	{rank = same; 88; 92; 14; 15;}
+	{rank = same; 18; 19; 122;}
+	{rank = same; 976; 25;}
+	{rank = same; 488; 76;}
+	{rank = same; 244; 38;}
+	{rank = same; 27;}
+	{rank = same; 82;}
+	{rank = same; 41;}
+	{rank = same; 124;}
+	{rank = same; 62;}
+	{rank = same; 31;}
+	{rank = same; 94;}
+	{rank = same; 47;}
+	{rank = same; 142;}
+	{rank = same; 71;}
+	{rank = same; 214;}
+	{rank = same; 107;}
+	{rank = same; 322;}
+	{rank = same; 161;}
+	{rank = same; 484;}
+	{rank = same; 242;}
+	{rank = same; 121;}
+	{rank = same; 364;}
+	{rank = same; 182;}
+	{rank = same; 91;}
+	{rank = same; 274;}
+	{rank = same; 137;}
+	{rank = same; 412;}
+	{rank = same; 206;}
+	{rank = same; 103;}
+	{rank = same; 310;}
+	{rank = same; 155;}
+	{rank = same; 466;}
+	{rank = same; 233;}
+	{rank = same; 700;}
+	{rank = same; 350;}
+	{rank = same; 175;}
+	{rank = same; 526;}
+	{rank = same; 263;}
+	{rank = same; 790;}
+	{rank = same; 395;}
+	{rank = same; 1186;}
+	{rank = same; 593;}
+	{rank = same; 1780;}
+	{rank = same; 890;}
+	{rank = same; 445;}
+	{rank = same; 1336;}
+	{rank = same; 668;}
+	{rank = same; 334;}
+	{rank = same; 167;}
+	{rank = same; 502;}
+	{rank = same; 251;}
+	{rank = same; 754;}
+	{rank = same; 377;}
+	{rank = same; 1132;}
+	{rank = same; 566;}
+	{rank = same; 283;}
+	{rank = same; 850;}
+	{rank = same; 425;}
+	{rank = same; 1276;}
+	{rank = same; 638;}
+	{rank = same; 319;}
+	{rank = same; 958;}
+	{rank = same; 479;}
+	{rank = same; 1438;}
+	{rank = same; 719;}
+	{rank = same; 2158;}
+	{rank = same; 1079;}
+	{rank = same; 3238;}
+	{rank = same; 1619;}
+	{rank = same; 4858;}
+	{rank = same; 2429;}
+	{rank = same; 7288;}
+	{rank = same; 3644;}
+	{rank = same; 1822;}
+	{rank = same; 911;}
+	{rank = same; 2734;}
+	{rank = same; 1367;}
+	{rank = same; 4102;}
+	{rank = same; 2051;}
+	{rank = same; 6154;}
+	{rank = same; 3077;}
+	{rank = same; 9232;}
+	{rank = same; 4616;}
+	{rank = same; 2308;}
+	{rank = same; 1154;}
+	{rank = same; 577;}
+	{rank = same; 1732;}
+	{rank = same; 866;}
+	{rank = same; 433;}
+	{rank = same; 1300;}
+	{rank = same; 650;}
+	{rank = same; 325;}
+     }
+}

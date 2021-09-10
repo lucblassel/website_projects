@@ -1,0 +1,87 @@
+
+digraph G {
+rankdir = RL;
+     subgraph {
+     node [colorscheme=spectral10]
+
+	1 [shape=circle; style=filled; fillcolor=2];
+	2 [shape=circle; style=filled; fillcolor=3];
+	3 [shape=circle; style=filled; fillcolor=9];
+	4 [shape=circle; style=filled; fillcolor=4];
+	5 [shape=circle; style=filled; fillcolor=7];
+	6 [shape=circle; style=filled; fillcolor=10];
+	7 [shape=circle; style=filled; fillcolor=8];
+	8 [shape=circle; style=filled; fillcolor=5];
+	9 [shape=circle; style=filled; fillcolor=1];
+	10 [shape=circle; style=filled; fillcolor=8];
+	11 [shape=circle; style=filled; fillcolor=6];
+	12 [shape=circle; style=filled; fillcolor=1];
+	13 [shape=circle; style=filled; fillcolor=1];
+	14 [shape=circle; style=filled; fillcolor=9];
+	15 [shape=circle; style=filled; fillcolor=9];
+	16 [shape=circle; style=filled; fillcolor=6];
+	17 [shape=circle; style=filled; fillcolor=4];
+	18 [shape=circle; style=filled; fillcolor=2];
+	19 [shape=circle; style=filled; fillcolor=2];
+	20 [shape=circle; style=filled; fillcolor=9];
+
+	80->40
+	2->1
+	88->44
+	3->10
+	11->34
+	35->106
+	12->6
+	9->28
+	19->58
+	6->3
+	13->40
+	18->9
+	29->88
+	15->46
+	52->26
+	53->160
+	58->29
+	40->20
+	70->35
+	20->10
+	106->53
+	28->14
+	22->11
+	4->2
+	26->13
+	7->22
+	46->23
+	10->5
+	5->16
+	16->8
+	14->7
+	17->52
+	160->80
+	23->70
+	44->22
+	34->17
+	8->4
+
+	{rank = same; 2;}
+	{rank = same; 3; 20;}
+	{rank = same; 10;}
+	{rank = same; 5;}
+	{rank = same; 16;}
+	{rank = same; 8;}
+	{rank = same; 4;}
+	{rank = same; 40; 6;}
+	{rank = same; 44; 46; 7;}
+	{rank = same; 22; 23;}
+	{rank = same; 11; 70;}
+	{rank = same; 34; 35;}
+	{rank = same; 17; 106;}
+	{rank = same; 52; 53;}
+	{rank = same; 160; 26;}
+	{rank = same; 80; 12; 13;}
+	{rank = same; 9; 58;}
+	{rank = same; 28; 29;}
+	{rank = same; 88; 14; 15;}
+	{rank = same; 18; 19;}
+     }
+}
